@@ -1,0 +1,9 @@
+inherit mate
+
+NAME="mate-menu-editor"
+VERSION=1.4.0
+RELEASE=1
+CATEGORY="MATE"
+SUMMARY="MATE desktop menu editor (aka Mozo)"
+DESCRIPTION="MATE is a fork of the GNOME 2 desktop. It provides an intuitive
+and attractive desktop to Linux users using traditional metaphors."
