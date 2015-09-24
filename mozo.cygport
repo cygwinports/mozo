@@ -1,7 +1,7 @@
 inherit mate
 
 NAME="mozo"
-VERSION=1.8.0
+VERSION=1.10.1
 RELEASE=1
 CATEGORY="MATE"
 SUMMARY="MATE desktop menu editor"
