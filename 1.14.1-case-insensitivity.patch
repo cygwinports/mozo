@@ -1,0 +1,25 @@
+--- origsrc/mozo-1.14.1/Makefile.am	2016-04-07 09:08:51.000000000 -0500
++++ src/mozo-1.14.1/Makefile.am	2016-12-07 03:30:14.525408200 -0600
+@@ -4,18 +4,19 @@ SUBDIRS = data po Mozo
+ 
+ CLEANFILES=
+ 
+-bin_SCRIPTS = mozo
++bin_SCRIPTS = bin/mozo
+ CLEANFILES += mozo
+ 
+ DISTCLEANFILES = ChangeLog
+ 
+ DISTCHECK_CONFIGURE_FLAGS = --disable-icon-update
+ 
+-mozo: mozo.in
++bin/mozo: mozo.in
++	$(mkdir_p) bin
+ 	$(AM_V_GEN)sed -e s!\@PYTHON\@!@PYTHON@!	\
+ 	    -e s!\@PYOPTIONS\@!-OOt!			\
+ 	    < $< > $@
+-mozo: Makefile
++bin/mozo: Makefile
+ 
+ EXTRA_DIST = \
+ 	autogen.sh \
